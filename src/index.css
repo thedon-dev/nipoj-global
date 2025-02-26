@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.response {
+  padding-inline: 5%;
+}
+
+@media (width >= 64rem /* 1024px */) {
+  .response {
+    padding-inline: 10%;
+  }
+}
