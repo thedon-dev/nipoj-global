@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiCart } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
         <div
           className={`${
             navOpen ? "left-0" : "-left-[100%] lg:left-0"
-          } fixed lg:relative h-screen lg:h-fit top-0 w-2/3 pt-28 lg:pt-0 lg:w-fit bg-yellow-400 lg:bg-transparent lg:reative gap-16 lg:gap-7 flex flex-col lg:flex-row transition-all duration-300`}
+          } fixed lg:relative h-screen lg:h-fit top-0 w-2/3 pt-28 lg:pt-0 lg:w-fit bg-yellow-400 lg:bg-transparent lg:reative gap-16 lg:gap-7 flex flex-col lg:flex-row transition-all duration-300 z-50`}
         >
           <h3 className="lg:hidden top-20 text-2xl font-bold text-center">
             NIPOJ GLOBAL
@@ -64,7 +65,7 @@ const Navbar = () => {
           onClick={() => setNavOpen(!navOpen)}
           className="flex lg:hidden cursor-pointer p-3"
         >
-          <FaBars size={25} />
+          {navOpen ? <FaX size={25} /> : <FaBars size={25} />}
         </button>
       </div>
     </nav>
