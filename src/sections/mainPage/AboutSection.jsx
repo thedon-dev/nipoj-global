@@ -11,28 +11,29 @@ const AboutSection = () => {
         </h2>
         <YellowMarker />
         <p className="text-sm mt-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          sit, consectetur eveniet consequatur minus temporibus velit neque
-          numquam dolor illum!
+          Since 2003, NIPOJ Global Services Limited has been at the forefront of
+          Engineering, Construction, Renewable Energy, and Marine Services. Our
+          dedication to quality and innovation has solidified our reputation as
+          a trusted industry leader.
         </p>
-        <div className="mt-10">
+        <div className="mt-10 lg:mt-20">
           <Link className="lg:text-lg font-semibold px-7 py-2 border-4 border-yellow-500">
             ABOUT US
           </Link>
         </div>
       </div>
-      <div className="lg:w-3/5">
-        <div className="">
-          <video src="" className=""></video>
+      <div className="lg:w-3/5 flex flex-col">
+        <div className="flex-grow">
+          <video src="" className="w-full h-full object-cover" controls></video>
         </div>
         <div className="flex w-full mt-auto">
           <div className="bg-yellow-500 w-1/2 px-5 flex flex-col justify-center">
-            <h2 className="text-xl font-semibold">Call For A Quote</h2>
-            <p className="text-lg">+234 (0) 8035306165</p>
+            <h2 className="lg:text-xl font-semibold">Call For A Quote</h2>
+            <p className="text-sm lg:text-lg">+234 (0) 8035306165</p>
           </div>
           <div className="grid place-content-center w-1/2 p-5">
-            <Link className="px-7 py-2 border-4 border-[#2a2a2a]">
-              Online Estimate Form
+            <Link className="text-sm lg:text-base px-4 lg:px-7 py-2 border-4 border-[#2a2a2a]">
+              Estimate Form
             </Link>
           </div>
         </div>

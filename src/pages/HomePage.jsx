@@ -70,9 +70,9 @@ const HomePage = () => {
             <h2 className="font-bold text-4xl">Our Service</h2>
             <div className="flex flex-col py-10 justify-center gap-10 ">
               <div className="flex gap-5 items-center mt-2">
-                <FaBuilding className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
+                <FaBuilding className="w-[70px] h-[70px] text-white" />
                 <div>
-                  <h4 className="font-semibold text-xl">
+                  <h4 className="text-[#2a2a2a] font-semibold text-xl">
                     Structural & Civil Engineering
                   </h4>
                   <p className="text-sm w-4/5 text-white">
@@ -83,9 +83,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="flex gap-5 items-center mt-2">
-                <FaRoad className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
+                <FaRoad className="w-[70px] h-[70px] text-white" />
                 <div className="">
-                  <h4 className="font-semibold text-xl">
+                  <h4 className="text-[#2a2a2a] font-semibold text-xl">
                     Infrastructure Development
                   </h4>
                   <p className="text-sm w-4/5 text-white">
@@ -96,9 +96,9 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="flex gap-5 items-center mt-2">
-                <FaTasks className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
+                <FaTasks className="w-[70px] h-[70px] text-white" />
                 <div>
-                  <h4 className="font-semibold text-xl">
+                  <h4 className="text-[#2a2a2a] font-semibold text-xl">
                     Project Management & Execution
                   </h4>
                   <p className="text-sm w-4/5 text-white">
@@ -152,7 +152,7 @@ const HomePage = () => {
                   No Project Too Big Or Too Small
                 </h2>
                 <YellowMarker />
-                <div className="grid lg:grid-cols-2 text-sm gap-5 lg:gap-10 mt-10">
+                <div className="text-[#2a2a2a]  grid lg:grid-cols-2 text-sm gap-5 lg:gap-10 mt-10">
                   <p>
                     Since 2003, NIPOJ Global Services Limited has been
                     delivering cutting-edge solutions across key sectors,

@@ -37,7 +37,7 @@ const Footer = () => {
               type="text"
               name=""
               id=""
-              placeholder="Name"
+              placeholder="Email"
               className="p-4 col-span-1 bg-white"
             />
             <textarea
@@ -48,7 +48,7 @@ const Footer = () => {
               className="p-4 col-span-2 resize-none h-[10rem] bg-white"
             />
             <div className="col-span-2 flex justify-end">
-              <button className="uppercase border-4 border-white px-7 py-2 text-sm font-semibold">
+              <button className="uppercase border-4 border-[#2a2a2a] px-7 py-2 text-sm font-semibold">
                 {" "}
                 send message
               </button>

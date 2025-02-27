@@ -21,7 +21,7 @@ const LatestProjects = () => {
     },
   ];
   return (
-    <section className="px-[5%] lg:px-[10%] py-32">
+    <section className="px-[5%] lg:px-[10%] py-20">
       <div className="2xl:container mx-auto">
         <div className="flex flex-col justify-center">
           <h1 className="text-3xl lg:text-4xl font-bold text-center">
@@ -50,7 +50,7 @@ const LatestProjects = () => {
         </div>
 
         <div className="mt-20 flex justify-center">
-          <Link className="text-semibold px-7 py-2 border-4 border-[#2a2a2a]">
+          <Link className="text-semibold px-10 py-2 border-4 border-[#2a2a2a]">
             View All
           </Link>
         </div>
