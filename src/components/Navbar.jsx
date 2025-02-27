@@ -48,7 +48,7 @@ const Navbar = () => {
             {links.map((lnk, index) => (
               <Link
                 to={lnk.link}
-                className="text-black text-center font-semibold px-5 lg:px-3 py-3 lg:py-1"
+                className="text-black text-center px-5 lg:px-3 py-3 lg:py-1"
               >
                 {lnk.name}
               </Link>

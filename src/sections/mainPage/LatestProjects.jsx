@@ -48,6 +48,12 @@ const LatestProjects = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-20 flex justify-center">
+          <Link className="text-semibold px-7 py-2 border-4 border-[#2a2a2a]">
+            View All
+          </Link>
+        </div>
       </div>
     </section>
   );

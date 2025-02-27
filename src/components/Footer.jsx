@@ -68,21 +68,20 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="px-[5%] lg:px-0 flex flex-col gap-3 lg:w-2/3 lg:mt-[20%] lg:mx-auto font-semibold my-10">
+          <div className="px-[5%] lg:px-0 flex flex-col gap-3 lg:w-2/3 lg:mt-[20%] lg:mx-auto my-10">
             <div className="flex gap-3 items-center">
               <FaLocationPin className="text-gray-600" />
               <span>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolorem.
+                No. 30 Omerelu Street GRA, Phase II, Port Harcourt, Rivers State
               </span>
             </div>
             <div className="flex gap-3 items-center">
               <BsTelephoneFill className="text-gray-600" />
-              <span>+234 (0) 9057696490</span>
+              <span>+234 (0) 8035306165</span>
             </div>
             <div className="flex gap-3 items-center">
               <MdMessage className="text-gray-600" />
-              <span>viktoh7351@gmail.com</span>
+              <span>info@nipojglobalservicesltd.org</span>
             </div>
           </div>
         </div>
