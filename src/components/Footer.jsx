@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="2xl:container mx-auto flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 bg-yellow-400 px-[5%] py-14">
+        <div className="lg:w-1/2 bg-yellow-500 px-[5%] py-14">
           <h3 className="font-bold text-4xl lg:text-5xl">Contact Us</h3>
           <div className="border-[3px] border-[#2a2a2a] w-10 mt-5"></div>
           <form className="grid grid-cols-2 gap-5 mt-8">

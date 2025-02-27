@@ -5,6 +5,9 @@ import YellowMarker from "../components/YellowMarker";
 import LatestProjects from "../sections/mainPage/LatestProjects";
 import { Helmet } from "react-helmet";
 import { FaBuilding, FaRoad, FaTasks } from "react-icons/fa";
+import AboutSection from "../sections/mainPage/AboutSection";
+import HeroImage from "../assets/HeroImage.jpg";
+import image2 from "../assets/image2.jpg";
 
 const HomePage = () => {
   return (
@@ -40,26 +43,30 @@ const HomePage = () => {
         <section className="flex flex-col lg:flex-row 2xl:container mx-auto">
           <div
             className="lg:w-2/3 py-32 px-[5%] lg:p-32 bg-black text-white"
-            style={{ backgroundImage: `url()` }}
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${HeroImage})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
           >
-            <h1 className="text-4xl lg:text-5xl font-bold border-l-8 border-yellow-400 p-3 lg:p-5 text-white">
+            <h1 className="text-4xl lg:text-5xl font-bold border-l-8 border-yellow-500 p-3 lg:p-5 text-white">
               Engineering & Construction
             </h1>
             <p className="mt-10 text-sm lg:text-xl">
               With a commitment to quality, innovation, and sustainability,{" "}
-              <span className="text-2xl text-yellow-400 font-bold">NIPOJ </span>
+              <span className="text-2xl text-yellow-500 font-bold">NIPOJ </span>
               Global Services Ltd. delivers cutting-edge engineering and
               construction solutions for commercial, industrial, and
               infrastructure projects. Our expertise ensures durable and
               cost-effective structures that meet global standards.
             </p>
             <div className="mt-14">
-              <Link className="uppercase font-bold lg:text-md px-7 py-3 bg-yellow-400 text-black">
+              <Link className="uppercase font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black">
                 view our work
               </Link>
             </div>
           </div>
-          <div className="bg-yellow-400 lg:w-1/3 px-[5%] py-14 lg:p-14">
+          <div className="bg-yellow-500 lg:w-1/3 px-[5%] py-14 lg:p-14">
             <h2 className="font-bold text-4xl">Our Service</h2>
             <div className="flex flex-col py-10 justify-center gap-10 ">
               <div className="flex gap-5 items-center mt-2">
@@ -111,11 +118,11 @@ const HomePage = () => {
         </section>
         <div className="py-8 px-[5%] lg:px-[15%]">
           <div className="2xl:container mx-auto flex flex-wrap items-center justify-between">
-            <h2 className="text-sm lg:text-4xl font-semibold lg;font-bold">
+            <h2 className="text-sm lg:text-3xl font-semibold lg:font-bold">
               Get A Quote For Your Project
             </h2>
             <div className="">
-              <Link className="text-sm lg:text-xl font-semibold border-4 border-yellow-400 px-4 py-2 lg:px-7 lg:py-3">
+              <Link className="text-sm lg:text-lg font-semibold border-4 border-yellow-500 px-4 py-2 lg:px-7 lg:py-3">
                 Free Quote
               </Link>
             </div>
@@ -123,8 +130,23 @@ const HomePage = () => {
         </div>
         <section className="bg-[#f7f7f7]">
           <div className="2xl:container flex flex-col lg:flex-row mx-auto">
-            <div className="lg:w-1/3 h-[20rem]"></div>
-            <div className="lg:w-2/3 mt-10 lg:mt-0">
+            <div
+              className="lg:w-2/5 hidden lg:block"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image2})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+            <div
+              className="lg:w-2/5 h-[20rem] block lg:hidden"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image2})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+            <div className="lg:w-3/5 mt-10 lg:mt-0">
               <div className="px-[5%] lg:px-24 lg:py-36">
                 <h2 className="font-bold text-4xl">
                   No Project Too Big Or Too Small
@@ -132,22 +154,27 @@ const HomePage = () => {
                 <YellowMarker />
                 <div className="grid lg:grid-cols-2 text-sm gap-5 lg:gap-10 mt-10">
                   <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit nobis quod consectetur ad alias voluptatibus quas.
-                    Cupiditate rerum culpa ad impedit dolor? Vero autem fugiat
-                    ipsum esse, laboriosam ipsam a fugit delectus est maxime
-                    laborum officiis qui consequatur! Obcaecati quam quidem
-                    libero architecto consectetur quibusdam.
+                    Since 2003, NIPOJ Global Services Limited has been
+                    delivering cutting-edge solutions across key sectors,
+                    including Engineering, Marine Services, Communications,
+                    Power, and Construction. With a strong commitment to
+                    innovation and sustainability, we have established ourselves
+                    as a trusted leader in the industry.
                   </p>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit voluptate adipisci ut? Nostrum, autem ipsa.
+                    Our experience spans over two decades, allowing us to
+                    provide high-quality and cost-effective solutions tailored
+                    to meet the unique needs of our clients. We take pride in
+                    our ability to execute projects efficiently, ensuring timely
+                    delivery without compromising on quality.
                   </p>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit voluptate adipisci ut? Nostrum, autem ipsa.
+                    Backed by a strong network of partnerships and
+                    certifications from regulatory bodies such as COREN, DPR,
+                    and NOSDRA, we continue to push the boundaries of excellence
+                    in Engineering and Construction.
                   </p>
-                  <div className="mt-8 lg:mt-0">
+                  <div className="mt-5">
                     <Link className="px-10 py-3 border-4 font-semibold border-black">
                       Learn More
                     </Link>
@@ -155,14 +182,14 @@ const HomePage = () => {
                 </div>
               </div>
               <div className="flex text-black mt-10 2xl:container mx-auto">
-                <div className="bg-yellow-400 w-1/2 flex flex-col items-center p-4">
-                  <h3 className="font-bold text-xl lg:text-3xl">12</h3>
+                <div className="bg-yellow-500 w-1/2 flex flex-col items-center p-4">
+                  <h3 className="font-bold text-xl lg:text-3xl">21</h3>
                   <p className="font-semibold lg:font-bold">
                     years established
                   </p>
                 </div>
                 <div className="bg-[#242424] w-1/2 flex flex-col items-center p-4 text-white">
-                  <h3 className="font-bold text-xl lg:text-3xl">250</h3>
+                  <h3 className="font-bold text-xl lg:text-3xl">250+</h3>
                   <p className="font-semibold lg:font-bold">
                     projects completed
                   </p>
@@ -171,7 +198,9 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
         <LatestProjects />
+        <AboutSection />
       </main>
     </>
   );
