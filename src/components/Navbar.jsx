@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BiCart } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
@@ -28,8 +28,41 @@ const Navbar = () => {
       link: "/projects",
     },
   ];
+  const navRef = useRef(null); // Reference to navbar container
+
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling when navbar is open
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [navOpen]);
+
+  const handleOutsideClick = (e) => {
+    if (navRef.current && !navRef.current.contains(e.target)) {
+      setNavOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (navOpen) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    } else {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [navOpen]);
   return (
     <nav className="py-5 response bg-white shadow">
+      {navOpen && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-md transition-all duration-300"></div>
+      )}
       <div className="2xl:container mx-auto flex items-center justify-between">
         <div>
           <Link to="/" className="text-xl font-bold">
@@ -37,6 +70,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div
+          ref={navRef}
           className={`${
             navOpen ? "left-0" : "-left-[100%] lg:left-0"
           } fixed lg:relative h-screen lg:h-fit top-0 w-2/3 pt-28 lg:pt-0 lg:w-fit bg-yellow-400 lg:bg-transparent lg:reative gap-16 lg:gap-7 flex flex-col lg:flex-row transition-all duration-300 z-50`}
@@ -62,7 +96,11 @@ const Navbar = () => {
           </div>
         </div>
         <button
-          onClick={() => setNavOpen(!navOpen)}
+          // onClick={() => setNavOpen(!navOpen)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setNavOpen(!navOpen);
+          }}
           className="flex lg:hidden cursor-pointer p-3"
         >
           {navOpen ? <FaX size={25} /> : <FaBars size={25} />}
