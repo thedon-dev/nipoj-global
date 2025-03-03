@@ -1,7 +1,7 @@
 import React from "react";
 
 const QuestionAndAnswer = () => {
-  return <div>QuestionAndAnswer</div>;
+  return <section>QuestionAndAnswer</section>;
 };
 
 export default QuestionAndAnswer;
