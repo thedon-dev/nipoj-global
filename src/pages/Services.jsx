@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import FreeQuote from "../components/FreeQuote";
 import heroImage from "../assets/HeroImage.jpg";
 import { BiBuildings } from "react-icons/bi";
-import { PiBuildings } from "react-icons/pi";
+import { PiBuildings, PiDotBold } from "react-icons/pi";
 import { MdDesignServices, MdHomeRepairService } from "react-icons/md";
 import { GoTools } from "react-icons/go";
+import YellowMarker from "../components/YellowMarker";
+import LatestProjects from "../sections/mainPage/LatestProjects";
 
 const Services = () => {
   const services = [
@@ -25,6 +27,32 @@ const Services = () => {
       description: "",
     },
   ];
+
+  const BuildingConstServ = [
+    "residential construction",
+    "Commercial Buildings",
+    "Industrial Structures",
+    "Road & Infrastructure Development",
+    "Project Management & Consultation",
+  ];
+
+  const RepairConstServ = [
+    "Electrical Repairs & Wiring",
+    "Plumbing & Water Systems ",
+    "Roofing Repairs & Replacement ",
+    "Masonry & Concrete Work ",
+    "HVAC Installation & Maintenance ",
+    "Painting & Finishing",
+  ];
+
+  const DesignConstServ = [
+    "Architectural & Structural Designs",
+    "Interior Design & Decoration",
+    "Landscaping & Outdoor Spaces",
+    "Smart Home & Security Installations",
+    "Modular & Prefabricated Constructions",
+  ];
+
   return (
     <>
       <section
@@ -82,21 +110,127 @@ const Services = () => {
       <FreeQuote />
       <section className="">
         <div className="2xl:container mx-auto">
-          <div></div>
-          <div className="flex">
-            <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
-              <Link className="border-4 border-white px-10 py-3 text-white">
-                Get A Quote
-              </Link>
+          <div className="w-4/5 ms-auto bg-[#f7f7f7]">
+            <div className="px-[5%] py-20 lg:p-32">
+              <h2 className="text-4xl font-semibold">Building Construction</h2>
+              <YellowMarker />
+              <p className="lg:text-lg mt-5">
+                At Nipoj Global, we specialize in the design, planning, and
+                construction of high-quality buildings. Our team of experienced
+                architects, engineers, and builders work together to create
+                durable and aesthetically pleasing structures that meet modern
+                standards.
+              </p>
+              <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
+                {BuildingConstServ.map((service, index) => (
+                  <p
+                    key={index}
+                    className="text-sm lg:text-base flex items-center"
+                  >
+                    <PiDotBold size={30} />
+                    {service}
+                  </p>
+                ))}
+              </div>
             </div>
-            <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
-              <Link className="border-4 border-white px-10 py-3">
-                Learn More
-              </Link>
+            <div className="flex">
+              <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 border-white px-10 py-2 text-white">
+                  Get A Quote
+                </Link>
+              </div>
+              <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 border-white px-10 py-2">
+                  Learn More
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="">
+        <div className="2xl:container mx-auto">
+          <div className="w-4/5">
+            <div className="px-[5%] py-20 lg:px-20 lg:py-32">
+              <h2 className="text-4xl font-semibold">
+                Repairs & Installations
+              </h2>
+              <YellowMarker />
+              <p className="lg:text-lg mt-5">
+                We provide expert repair and installation services to keep your
+                property in top condition. Whether it’s a minor fix or a major
+                renovation, our skilled technicians deliver reliable solutions
+                for homes and commercial buildings.
+              </p>
+              <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
+                {RepairConstServ.map((service, index) => (
+                  <p
+                    key={index}
+                    className="text-sm lg:text-base flex items-center"
+                  >
+                    <PiDotBold size={30} />
+                    {service}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="flex">
+              <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 border-white px-10 py-2 text-white">
+                  Get A Quote
+                </Link>
+              </div>
+              <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 border-white px-10 py-2">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="">
+        <div className="2xl:container mx-auto">
+          <div className="w-4/5 ms-auto bg-[#f7f7f7]">
+            <div className="px-[5%] py-20 lg:px-20 lg:py-32">
+              <h2 className="text-4xl font-semibold">Custom Design Projects</h2>
+              <YellowMarker />
+              <p className="lg:text-lg mt-5">
+                We bring creative and innovative designs to life, tailoring each
+                project to meet the unique vision of our clients. From
+                architectural planning to interior styling, we ensure every
+                detail is perfectly executed.
+              </p>
+              <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
+                {DesignConstServ.map((service, index) => (
+                  <p
+                    key={index}
+                    className="text-sm lg:text-base flex items-center"
+                  >
+                    <PiDotBold size={30} />
+                    {service}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="flex">
+              <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 border-white px-10 py-2 text-white">
+                  Get A Quote
+                </Link>
+              </div>
+              <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 border-white px-10 py-2">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <LatestProjects />
     </>
   );
 };
