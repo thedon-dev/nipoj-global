@@ -17,7 +17,7 @@ const Navbar = () => {
     },
     {
       name: "Services",
-      link: "/projects",
+      link: "/services",
     },
     {
       name: "About",
@@ -59,7 +59,7 @@ const Navbar = () => {
     };
   }, [navOpen]);
   return (
-    <nav className="py-5 response bg-white shadow">
+    <nav className="py-3 lg:py-5 response bg-white shadow">
       {navOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-md transition-all duration-300"></div>
       )}
@@ -88,12 +88,12 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <Link className="flex items-center gap-2">
               <BiCart size={30} />{" "}
               <p className="font-semibold lg:hidden">cart</p>
             </Link>
-          </div>
+          </div> */}
         </div>
         <button
           // onClick={() => setNavOpen(!navOpen)}
