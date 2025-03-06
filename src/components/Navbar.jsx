@@ -8,13 +8,17 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const links = [
     {
+      name: "Home",
+      link: "/",
+    },
+    {
       name: "Projects",
       link: "/projects",
     },
-    {
-      name: "Blog",
-      link: "/projects",
-    },
+    // {
+    //   name: "Blog",
+    //   link: "/projects",
+    // },
     {
       name: "Services",
       link: "/services",
@@ -81,6 +85,7 @@ const Navbar = () => {
           <div className="gap-3 flex flex-col lg:flex-row">
             {links.map((lnk, index) => (
               <Link
+                onClick={() => setNavOpen(false)}
                 to={lnk.link}
                 className="text-black text-center px-5 lg:px-3 py-3 lg:py-1"
               >

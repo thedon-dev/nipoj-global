@@ -111,7 +111,10 @@ const HomePage = () => {
               </div>
             </div>
             <div className="flex justify-center mt-3">
-              <Link className="px-7 py-1 border-4 border-[#2a2a2a]">
+              <Link
+                to="/services"
+                className="px-7 py-1 text-[#2a2a2a] border-4 border-[#2a2a2a]"
+              >
                 See More
               </Link>
             </div>

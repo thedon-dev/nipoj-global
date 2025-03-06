@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import FreeQuote from "../components/FreeQuote";
 import heroImage from "../assets/HeroImage.jpg";
@@ -10,6 +10,9 @@ import YellowMarker from "../components/YellowMarker";
 import LatestProjects from "../sections/mainPage/LatestProjects";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const services = [
     {
       heading: "Building Construction",
@@ -79,7 +82,7 @@ const Services = () => {
               Global delivers with excellence and professionalism.
             </p>
             <div className="mt-14">
-              <Link className="uppercase font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black">
+              <Link className="font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black">
                 Get A Free Quote
               </Link>
             </div>
@@ -110,7 +113,7 @@ const Services = () => {
       <FreeQuote />
       <section className="">
         <div className="2xl:container mx-auto">
-          <div className="w-4/5 ms-auto bg-[#f7f7f7]">
+          <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
             <div className="px-[5%] py-20 lg:p-32">
               <h2 className="text-4xl font-semibold">Building Construction</h2>
               <YellowMarker />
@@ -135,12 +138,12 @@ const Services = () => {
             </div>
             <div className="flex">
               <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 border-white px-10 py-2 text-white">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
                   Get A Quote
                 </Link>
               </div>
               <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 border-white px-10 py-2">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
                   Learn More
                 </Link>
               </div>
@@ -151,7 +154,7 @@ const Services = () => {
 
       <section className="">
         <div className="2xl:container mx-auto">
-          <div className="w-4/5">
+          <div className="lg:w-4/5">
             <div className="px-[5%] py-20 lg:px-20 lg:py-32">
               <h2 className="text-4xl font-semibold">
                 Repairs & Installations
@@ -177,12 +180,12 @@ const Services = () => {
             </div>
             <div className="flex">
               <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 border-white px-10 py-2 text-white">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
                   Get A Quote
                 </Link>
               </div>
               <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 border-white px-10 py-2">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
                   Learn More
                 </Link>
               </div>
@@ -193,7 +196,7 @@ const Services = () => {
 
       <section className="">
         <div className="2xl:container mx-auto">
-          <div className="w-4/5 ms-auto bg-[#f7f7f7]">
+          <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
             <div className="px-[5%] py-20 lg:px-20 lg:py-32">
               <h2 className="text-4xl font-semibold">Custom Design Projects</h2>
               <YellowMarker />
@@ -217,12 +220,12 @@ const Services = () => {
             </div>
             <div className="flex">
               <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 border-white px-10 py-2 text-white">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
                   Get A Quote
                 </Link>
               </div>
               <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 border-white px-10 py-2">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
                   Learn More
                 </Link>
               </div>
