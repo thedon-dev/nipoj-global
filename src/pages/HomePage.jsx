@@ -70,39 +70,39 @@ const HomePage = () => {
           <div className="bg-yellow-500 lg:w-1/3 px-[5%] py-14 lg:p-14">
             <h2 className="font-bold text-4xl">Our Service</h2>
             <div className="flex flex-col py-10 justify-center gap-10 ">
-              <div className="flex gap-5 items-center mt-2">
-                <FaBuilding className="w-[70px] h-[70px] text-white" />
+              <div className="flex flex-col lg:flex-row gap-5 lg:items-center mt-2">
+                <FaBuilding className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
                 <div>
                   <h4 className="text-[#2a2a2a] font-semibold text-xl">
                     Structural & Civil Engineering
                   </h4>
-                  <p className="text-sm w-4/5 text-white">
+                  <p className="text-sm lg:w-4/5 text-white">
                     We design and construct residential, commercial, and
                     industrial buildings, ensuring durability, efficiency, and
                     sustainability in every project.
                   </p>
                 </div>
               </div>
-              <div className="flex gap-5 items-center mt-2">
-                <FaRoad className="w-[70px] h-[70px] text-white" />
+              <div className="flex flex-col lg:flex-row gap-5 lg:items-center mt-2">
+                <FaRoad className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
                 <div className="">
                   <h4 className="text-[#2a2a2a] font-semibold text-xl">
                     Infrastructure Development
                   </h4>
-                  <p className="text-sm w-4/5 text-white">
+                  <p className="text-sm lg:w-4/5 text-white">
                     From bridges and highways to energy-efficient structures, we
                     handle critical infrastructure projects with precision and
                     expertise.
                   </p>
                 </div>
               </div>
-              <div className="flex gap-5 items-center mt-2">
-                <FaTasks className="w-[70px] h-[70px] text-white" />
+              <div className="flex flex-col lg:flex-row lg:items-center gap-5 mt-2">
+                <FaTasks className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
                 <div>
                   <h4 className="text-[#2a2a2a] font-semibold text-xl">
                     Project Management & Execution
                   </h4>
-                  <p className="text-sm w-4/5 text-white">
+                  <p className="text-sm lg:w-4/5 text-white">
                     We oversee projects from design to completion, ensuring
                     timely delivery, cost efficiency, and compliance with
                     international safety standards.
@@ -174,7 +174,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex text-black mt-10 2xl:container mx-auto">
+              <div className="flex text-[#2a2a2a] mt-10 2xl:container mx-auto">
                 <div className="bg-yellow-500 w-1/2 flex flex-col items-center p-4">
                   <h3 className="font-bold text-xl lg:text-3xl">21</h3>
                   <p className="font-semibold lg:font-bold">

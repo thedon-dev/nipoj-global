@@ -34,7 +34,7 @@ const LatestProjects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
           {projects.map((project, index) => (
-            <div className="border p-10">
+            <div key={index} className="border p-10">
               <h2 className="text-xl text-[#2a2a2a] font-semibold">
                 {project.title}
               </h2>

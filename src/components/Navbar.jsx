@@ -29,7 +29,7 @@ const Navbar = () => {
     },
     {
       name: "Contact",
-      link: "/projects",
+      link: "/contact",
     },
   ];
   const navRef = useRef(null); // Reference to navbar container
@@ -85,6 +85,7 @@ const Navbar = () => {
           <div className="gap-3 flex flex-col lg:flex-row">
             {links.map((lnk, index) => (
               <Link
+                key={index}
                 onClick={() => setNavOpen(false)}
                 to={lnk.link}
                 className="text-black text-center px-5 lg:px-3 py-3 lg:py-1"
