@@ -9,6 +9,7 @@ import AboutSection from "../sections/mainPage/AboutSection";
 import HeroImage from "../assets/HeroImage.jpg";
 import image2 from "../assets/image2.jpg";
 import FreeQuote from "../components/FreeQuote";
+import FAQ from "../components/QuestionAndAnswer";
 
 const Contact = () => {
   return (
@@ -65,7 +66,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <div className="py-8 px-[5%] lg:px-[15%] shadow-2xl">
+      <div className="bg-white py-8 px-[5%] lg:px-[15%] shadow-2xl">
         <div className="2xl:container mx-auto flex flex-col lg:flex-row lg:items-center justify-between">
           <div>
             <h2 className="text-xl lg:text-3xl text-yellow-500 font-semibold lg:font-bold">
@@ -80,6 +81,35 @@ const Contact = () => {
             <Link className="text-sm lg:text-lg font-semibold border-4 border-yellow-500 px-4 py-2 lg:px-7 lg:py-3">
               Online Estimate Form
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className="px-[5%] lg:px-[10%] py-14 lg:py-32 bg-[#f7f7f7]">
+        <div className="2xl:container mx-auto flex flex-col-reverse lg:grid grid-cols-2 lg:gap-20">
+          <div className="">
+            <h2 className="text-4xl font-semibold mt-20 lg:mt-0">
+              Get In Touch
+            </h2>
+            <YellowMarker />
+            <div className="flex flex-col gap-4 mt-5">
+              <input type="text" className="bg-white p-3" placeholder="Name" />
+              <input type="text" className="bg-white p-3" placeholder="Email" />
+              <textarea
+                name=""
+                id=""
+                className="resize-none h-[15rem] bg-white p-3"
+                placeholder="Write a message"
+              ></textarea>
+              <div className="flex justify-end mt-3">
+                <button className="border-4 border-[#2a2a2a] px-3 py-1">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <h1 className="text-3xl text-[#2a2a2a] font-semibold">FAQ</h1>
+            <FAQ />
           </div>
         </div>
       </div>
