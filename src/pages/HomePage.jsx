@@ -43,7 +43,7 @@ const HomePage = () => {
       <main>
         <section className="flex flex-col lg:flex-row 2xl:container mx-auto">
           <div
-            className="lg:w-2/3 py-32 px-[5%] lg:p-32 bg-black text-white"
+            className="lg:w-2/3 py-20 px-[5%] lg:p-32 bg-black text-white"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${HeroImage})`,
               backgroundSize: "cover",

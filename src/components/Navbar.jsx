@@ -63,7 +63,7 @@ const Navbar = () => {
     };
   }, [navOpen]);
   return (
-    <nav className="py-3 lg:py-5 response bg-white shadow">
+    <nav className="py-3 lg:py-5 response bg-white shadow sticky top-0">
       {navOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-md transition-all duration-300"></div>
       )}

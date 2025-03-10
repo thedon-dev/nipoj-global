@@ -190,7 +190,7 @@ const About = () => {
         </div>
       </section>
       <section className="px-[5%] lg:px-[10%] py-20 lg:py-32 text-center">
-        <h1 className="text-2xl front-semibold text-[#2a2a2a] w-4/5 mx-auto">
+        <h1 className="text-2xl front-semibold text-[#2a2a2a] lg:w-4/5 mx-auto">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum maxime
           dolorem commodi, consequuntur quia veniam cupiditate odit ex nesciunt
           animi.
