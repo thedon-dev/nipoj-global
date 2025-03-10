@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import YellowMarker from "../../components/YellowMarker";
 import { Link } from "react-router-dom";
+import video from "../../assets/VID-20250217-WA0079.mp4";
 
 const AboutSection = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(videoElement);
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <section className="flex flex-col lg:flex-row">
       <div className="lg:w-2/5 bg-[#2a2a2a] text-white px-[5%] py-10 lg:p-20">
@@ -24,7 +46,15 @@ const AboutSection = () => {
       </div>
       <div className="lg:w-3/5 flex flex-col">
         <div className="flex-grow">
-          <video src="" className="w-full h-full object-cover" controls></video>
+          <video
+            ref={videoRef}
+            src={video}
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
         </div>
         <div className="flex w-full mt-auto">
           <div className="bg-yellow-500 w-1/2 px-5 flex flex-col justify-center">

@@ -3,6 +3,7 @@ import { BiCart } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import mainLogo from "../assets/mainLogo.jpg";
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -63,14 +64,15 @@ const Navbar = () => {
     };
   }, [navOpen]);
   return (
-    <nav className="py-3 lg:py-5 response bg-white shadow sticky top-0">
+    <nav className="py-3 lg:py-5 response bg-white shadow sticky top-0 z-50">
       {navOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-md transition-all duration-300"></div>
       )}
       <div className="2xl:container mx-auto flex items-center justify-between">
         <div>
           <Link to="/" className="text-xl font-bold">
-            NIPOJ GLOBAL
+            {/* NIPOJ GLOBAL */}
+            <img src={mainLogo} alt="" className="w-[200px]" />
           </Link>
         </div>
         <div
@@ -79,7 +81,7 @@ const Navbar = () => {
             navOpen ? "left-0" : "-left-[100%] lg:left-0"
           } fixed lg:relative h-screen lg:h-fit top-0 w-2/3 pt-28 lg:pt-0 lg:w-fit bg-yellow-400 lg:bg-transparent lg:reative gap-16 lg:gap-7 flex flex-col lg:flex-row transition-all duration-300 z-50`}
         >
-          <h3 className="lg:hidden top-20 text-2xl font-bold text-center">
+          <h3 className="lg:hidden top-20 text-white text-2xl font-bold text-center">
             NIPOJ GLOBAL
           </h3>
           <div className="gap-3 flex flex-col lg:flex-row">
