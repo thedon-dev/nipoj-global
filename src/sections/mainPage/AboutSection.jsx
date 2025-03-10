@@ -26,7 +26,7 @@ const AboutSection = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <section className="flex flex-col lg:flex-row">
+    <section className="flex flex-col lg:flex-row 2xl:container mx-auto">
       <div className="lg:w-2/5 bg-[#2a2a2a] text-white px-[5%] py-10 lg:p-20">
         <h2 className="text-3xl lg:text-4xl font-bold">
           We've Been Building For Over 10 Years
@@ -39,7 +39,10 @@ const AboutSection = () => {
           a trusted industry leader.
         </p>
         <div className="mt-10 lg:mt-20">
-          <Link className="lg:text-lg font-semibold px-7 py-2 border-4 border-yellow-500">
+          <Link
+            to="/aboutus"
+            className="lg:text-lg font-semibold px-7 py-2 border-4 border-yellow-500"
+          >
             ABOUT US
           </Link>
         </div>

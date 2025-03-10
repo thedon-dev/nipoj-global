@@ -15,19 +15,30 @@ const Services = () => {
   }, []);
   const services = [
     {
-      heading: "Building Construction",
+      heading: "Civil, Power & Communications Engineering Construction",
       icon: <PiBuildings className="w-[50px] h-[50px] text-yellow-500" />,
-      description: "",
+      description:
+        "We specialize in large-scale civil, power, and telecommunications infrastructure projects, ensuring quality and efficiency in construction.",
     },
     {
-      heading: "Building Repairs",
+      heading: "Energy",
       icon: <GoTools className="w-[50px] h-[50px] text-yellow-500" />,
-      description: "",
+      description:
+        "Our energy solutions include power generation, renewable energy systems, and grid infrastructure for sustainable and efficient energy distribution.",
     },
     {
-      heading: "Custom Design",
+      heading: "Marine and Consultancy",
       icon: <MdDesignServices className="w-[50px] h-[50px] text-yellow-500" />,
-      description: "",
+      description:
+        "We offer expert maritime solutions, underwater engineering, and professional consultancy services tailored for offshore and marine industries.",
+    },
+    {
+      heading: "Mining Operation",
+      icon: (
+        <MdHomeRepairService className="w-[50px] h-[50px] text-yellow-500" />
+      ),
+      description:
+        "Our mining operations focus on safe, efficient extraction and processing of minerals, ensuring compliance with environmental and safety regulations.",
     },
   ];
 
@@ -72,14 +83,20 @@ const Services = () => {
               Our Construction Services
             </h1>
             <p className="mt-10 text-sm lg:text-lg">
-              We provide top-quality construction solutions tailored to meet the
-              needs of our clients. Whether you're looking for complete building
-              construction, specialized repairs, or custom design projects,
+              At
               <span className="text-2xl text-yellow-500 font-bold">
                 {" "}
                 NIPOJ{" "}
-              </span>{" "}
-              Global delivers with excellence and professionalism.
+              </span>
+              Global Services Limited, we specialize in delivering comprehensive
+              engineering and infrastructure solutions. Our expertise spans
+              Civil, Power & Communications Engineering Construction, Energy
+              Solutions, Marine Engineering & Consultancy, and Mining
+              Operations. We are committed to building high-quality
+              infrastructure, enhancing energy efficiency, developing marine &
+              offshore projects, and ensuring sustainable mining practices all
+              while maintaining the highest standards of safety, quality, and
+              environmental responsibility.
             </p>
             <div className="mt-14">
               <Link className="font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black">
@@ -87,7 +104,7 @@ const Services = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/3 mt-10 lg:mt-0">
+          {/* <div className="lg:w-1/3 mt-10 lg:mt-0">
             <h2 className="text-yellow-500 text-4xl lg:text-5xl font-semibold">
               What We Do{" "}
             </h2>
@@ -107,67 +124,32 @@ const Services = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <FreeQuote />
       <section className="">
         <div className="2xl:container mx-auto">
-          <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
+          <div className="lg:w-4/5 bg-[#f7f7f7]">
             <div className="px-[5%] py-20 lg:p-32">
-              <h2 className="text-4xl font-semibold">Building Construction</h2>
-              <YellowMarker />
-              <p className="lg:text-lg mt-5">
-                At Nipoj Global, we specialize in the design, planning, and
-                construction of high-quality buildings. Our team of experienced
-                architects, engineers, and builders work together to create
-                durable and aesthetically pleasing structures that meet modern
-                standards.
-              </p>
-              <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
-                {BuildingConstServ.map((service, index) => (
-                  <p
-                    key={index}
-                    className="text-sm lg:text-base flex items-center"
-                  >
-                    <PiDotBold size={30} />
-                    {service}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div className="flex">
-              <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
-                  Get A Quote
-                </Link>
-              </div>
-              <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
-                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="">
-        <div className="2xl:container mx-auto">
-          <div className="lg:w-4/5">
-            <div className="px-[5%] py-20 lg:px-20 lg:py-32">
               <h2 className="text-4xl font-semibold">
-                Repairs & Installations
+                Civil, Power & Communications Engineering Construction
               </h2>
               <YellowMarker />
               <p className="lg:text-lg mt-5">
-                We provide expert repair and installation services to keep your
-                property in top condition. Whether it’s a minor fix or a major
-                renovation, our skilled technicians deliver reliable solutions
-                for homes and commercial buildings.
+                Nipoj Global specializes in civil engineering, power
+                infrastructure, and telecommunications construction. We deliver
+                high-quality projects that enhance urban and industrial
+                development, ensuring efficiency and sustainability.
               </p>
               <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
-                {RepairConstServ.map((service, index) => (
+                {[
+                  "Road & Bridge Construction",
+                  "High-Rise & Commercial Buildings",
+                  "Electrical Grid Infrastructure",
+                  "Telecommunication Towers & Fiber Optics",
+                  "Water & Waste Management Systems",
+                ].map((service, index) => (
                   <p
                     key={index}
                     className="text-sm lg:text-base flex items-center"
@@ -197,17 +179,112 @@ const Services = () => {
       <section className="">
         <div className="2xl:container mx-auto">
           <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
-            <div className="px-[5%] py-20 lg:px-20 lg:py-32">
-              <h2 className="text-4xl font-semibold">Custom Design Projects</h2>
+            <div className="px-[5%] py-20 lg:p-32">
+              <h2 className="text-4xl font-semibold">Energy</h2>
               <YellowMarker />
               <p className="lg:text-lg mt-5">
-                We bring creative and innovative designs to life, tailoring each
-                project to meet the unique vision of our clients. From
-                architectural planning to interior styling, we ensure every
-                detail is perfectly executed.
+                We provide advanced energy solutions, including renewable energy
+                systems and power generation infrastructure, ensuring efficient
+                and sustainable energy distribution.
               </p>
               <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
-                {DesignConstServ.map((service, index) => (
+                {[
+                  "Solar & Wind Energy Solutions",
+                  "Hydroelectric & Biomass Energy",
+                  "High Voltage Power Distribution",
+                  "Energy Storage & Backup Systems",
+                  "Oil & Gas Power Solutions",
+                ].map((service, index) => (
+                  <p
+                    key={index}
+                    className="text-sm lg:text-base flex items-center"
+                  >
+                    <PiDotBold size={30} />
+                    {service}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="flex">
+              <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
+                  Get A Quote
+                </Link>
+              </div>
+              <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="">
+        <div className="2xl:container mx-auto">
+          <div className="lg:w-4/5 bg-[#f7f7f7]">
+            <div className="px-[5%] py-20 lg:p-32">
+              <h2 className="text-4xl font-semibold">Marine and Consultancy</h2>
+              <YellowMarker />
+              <p className="lg:text-lg mt-5">
+                Our marine services and consultancy provide cutting-edge
+                solutions for offshore engineering, underwater construction, and
+                maritime logistics.
+              </p>
+              <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
+                {[
+                  "Offshore Platform Construction",
+                  "Underwater Inspection & Maintenance",
+                  "Port & Harbor Development",
+                  "Dredging & Land Reclamation",
+                  "Maritime Safety & Compliance Consulting",
+                ].map((service, index) => (
+                  <p
+                    key={index}
+                    className="text-sm lg:text-base flex items-center"
+                  >
+                    <PiDotBold size={30} />
+                    {service}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="flex">
+              <div className="bg-[#2a2a2a] py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
+                  Get A Quote
+                </Link>
+              </div>
+              <div className="bg-yellow-500 py-7 w-1/2 grid place-content-center">
+                <Link className="border-4 text-sm border-white px-5 lg:px-10 py-1 lg:py-2 text-white">
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="">
+        <div className="2xl:container mx-auto">
+          <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
+            <div className="px-[5%] py-20 lg:p-32">
+              <h2 className="text-4xl font-semibold">Mining Operation</h2>
+              <YellowMarker />
+              <p className="lg:text-lg mt-5">
+                We offer efficient and environmentally responsible mining
+                solutions, focusing on mineral extraction, processing, and site
+                rehabilitation.
+              </p>
+              <div className="grid lg:grid-cols-3 gap-y-5 gap-x-10 mt-5">
+                {[
+                  "Exploration & Surveying",
+                  "Open-Pit & Underground Mining",
+                  "Mineral Processing & Refining",
+                  "Environmental Impact Assessments",
+                  "Mining Safety & Regulatory Compliance",
+                ].map((service, index) => (
                   <p
                     key={index}
                     className="text-sm lg:text-base flex items-center"

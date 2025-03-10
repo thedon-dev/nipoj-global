@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { BiCart } from "react-icons/bi";
 import { FaBars } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import mainLogo from "../assets/mainLogo.jpg";
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
     },
     {
       name: "About",
-      link: "/about",
+      link: "/aboutus",
     },
     {
       name: "Contact",
@@ -86,14 +86,18 @@ const Navbar = () => {
           </h3>
           <div className="gap-3 flex flex-col lg:flex-row">
             {links.map((lnk, index) => (
-              <Link
+              <NavLink
                 key={index}
                 onClick={() => setNavOpen(false)}
                 to={lnk.link}
-                className="text-black text-center px-5 lg:px-3 py-3 lg:py-1"
+                className={({ isActive }) =>
+                  `text-black text-center px-5 lg:px-3 py-5 lg:py-1 ${
+                    isActive ? "border-b-4 border-yellow-500" : ""
+                  } transition-all duration-300`
+                }
               >
                 {lnk.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
           {/* <div className="flex items-center justify-center">

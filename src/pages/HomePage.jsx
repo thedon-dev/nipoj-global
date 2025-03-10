@@ -4,13 +4,22 @@ import { Link } from "react-router-dom";
 import YellowMarker from "../components/YellowMarker";
 import LatestProjects from "../sections/mainPage/LatestProjects";
 import { Helmet } from "react-helmet";
-import { FaBuilding, FaRoad, FaTasks } from "react-icons/fa";
+import { FaBuilding, FaDotCircle, FaRoad, FaTasks } from "react-icons/fa";
 import AboutSection from "../sections/mainPage/AboutSection";
 import HeroImage from "../assets/HeroImage.jpg";
 import image2 from "../assets/image2.jpg";
 import FreeQuote from "../components/FreeQuote";
+import { BsDot } from "react-icons/bs";
+import { GoDot, GoDotFill } from "react-icons/go";
+import { PiDot } from "react-icons/pi";
 
 const HomePage = () => {
+  const Services = [
+    "Civil, Power and Communications Engineering Construction",
+    "Energy",
+    "Marine and Consultancy",
+    "Mining operation",
+  ];
   return (
     <>
       <Helmet>
@@ -69,46 +78,19 @@ const HomePage = () => {
           </div>
           <div className="bg-yellow-500 lg:w-1/3 px-[5%] py-14 lg:p-14">
             <h2 className="font-bold text-4xl">Our Service</h2>
-            <div className="flex flex-col py-10 justify-center gap-10 ">
-              <div className="flex flex-col lg:flex-row gap-5 lg:items-center mt-2">
-                <FaBuilding className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
-                <div>
-                  <h4 className="text-[#2a2a2a] font-semibold text-xl">
-                    Structural & Civil Engineering
-                  </h4>
-                  <p className="text-sm lg:w-4/5 text-white">
-                    We design and construct residential, commercial, and
-                    industrial buildings, ensuring durability, efficiency, and
-                    sustainability in every project.
-                  </p>
+            <div className="flex flex-col py-10 justify-center gap-5 ">
+              {Services.map((service, idx) => (
+                <div key={idx} className="flex flex-row gap-3 items-start mt-2">
+                  <div>
+                    <GoDotFill className="w-[25px] h-[25px] text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-[#2a2a2a] font-semibold text-xl">
+                      {service}
+                    </h4>
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col lg:flex-row gap-5 lg:items-center mt-2">
-                <FaRoad className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
-                <div className="">
-                  <h4 className="text-[#2a2a2a] font-semibold text-xl">
-                    Infrastructure Development
-                  </h4>
-                  <p className="text-sm lg:w-4/5 text-white">
-                    From bridges and highways to energy-efficient structures, we
-                    handle critical infrastructure projects with precision and
-                    expertise.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col lg:flex-row lg:items-center gap-5 mt-2">
-                <FaTasks className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] text-white" />
-                <div>
-                  <h4 className="text-[#2a2a2a] font-semibold text-xl">
-                    Project Management & Execution
-                  </h4>
-                  <p className="text-sm lg:w-4/5 text-white">
-                    We oversee projects from design to completion, ensuring
-                    timely delivery, cost efficiency, and compliance with
-                    international safety standards.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
             <div className="flex justify-center mt-3">
               <Link
@@ -168,7 +150,10 @@ const HomePage = () => {
                     in Engineering and Construction.
                   </p>
                   <div className="mt-5">
-                    <Link className="px-10 py-3 border-4 font-semibold border-black">
+                    <Link
+                      to="/aboutus"
+                      className="px-10 py-3 border-4 font-semibold border-black"
+                    >
                       Learn More
                     </Link>
                   </div>

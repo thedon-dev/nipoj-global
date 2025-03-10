@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function MainLayout() {
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/aboutus" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
 
       {location.pathname !== "/contact" && <Footer />}
