@@ -72,7 +72,7 @@ const Footer = () => {
             <div className="flex gap-3 items-center">
               <FaLocationPin className="text-gray-600" />
               <span>
-                No. 30 Omerelu Street GRA, Phase II, Port Harcourt, Rivers State
+                Head Office: House 1B, No. 5 Uruguay Crescent, Maitama
               </span>
             </div>
             <div className="flex gap-3 items-center">

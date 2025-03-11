@@ -29,6 +29,9 @@ const Projects = () => {
           </p>
         </div>
       </section>
+      <section className="px-[5%] lg:px-[10%]">
+        <div className="2xl:container mx-auto"></div>
+      </section>
       <section className="2xl:container mx-auto bg-yellow-500 px-[5%] lg:px-[10%] py-20">
         <h1 className="text-2xl lg:text-4xl text-center font-semibold text-[#2a2a2a]">
           Have a Project in Mind? <br /> Let's Get Building

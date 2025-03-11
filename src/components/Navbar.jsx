@@ -13,20 +13,16 @@ const Navbar = () => {
       link: "/",
     },
     {
-      name: "Projects",
-      link: "/projects",
+      name: "About",
+      link: "/aboutus",
     },
-    // {
-    //   name: "Blog",
-    //   link: "/projects",
-    // },
     {
       name: "Services",
       link: "/services",
     },
     {
-      name: "About",
-      link: "/aboutus",
+      name: "Projects",
+      link: "/projects",
     },
     {
       name: "Contact",

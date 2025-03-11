@@ -186,7 +186,7 @@ const About = () => {
             ></div>
             <div className="flex">
               <div className="bg-[#242424] w-1/2 flex flex-col items-center p-4 text-white">
-                <h3 className="font-bold text-xl lg:text-3xl">250+</h3>
+                <h3 className="font-bold text-xl lg:text-3xl">50+</h3>
                 <p className="font-semibold lg:font-bold">projects completed</p>
               </div>
               <div className="bg-yellow-500 w-1/2 flex flex-col items-center p-4">

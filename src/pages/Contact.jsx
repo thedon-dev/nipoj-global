@@ -48,9 +48,7 @@ const Contact = () => {
           <div className="flex flex-col py-10 justify-center gap-8 ">
             <div className="flex flex-col gap-2 mt-2">
               <h4 className="text-[#2a2a2a] font-semibold">Our Office</h4>
-              <p>
-                No. 30 Omerelu Street GRA, Phase II, Port Harcourt, Rivers State
-              </p>
+              <p>House 1B, No. 5 Uruguay Crescent, Maitama</p>
             </div>
             <div className="flex flex-col gap-2 mt-2">
               <h4 className="text-[#2a2a2a] font-semibold">
