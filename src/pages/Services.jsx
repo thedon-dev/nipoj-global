@@ -178,7 +178,7 @@ const Services = () => {
 
       <section className="">
         <div className="2xl:container mx-auto">
-          <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
+          <div className="lg:w-4/5 ms-auto">
             <div className="px-[5%] py-20 lg:p-32">
               <h2 className="text-4xl font-semibold">Energy</h2>
               <YellowMarker />
@@ -268,7 +268,7 @@ const Services = () => {
 
       <section className="">
         <div className="2xl:container mx-auto">
-          <div className="lg:w-4/5 ms-auto bg-[#f7f7f7]">
+          <div className="lg:w-4/5 ms-auto">
             <div className="px-[5%] py-20 lg:p-32">
               <h2 className="text-4xl font-semibold">Mining Operation</h2>
               <YellowMarker />

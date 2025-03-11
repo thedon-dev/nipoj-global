@@ -43,7 +43,7 @@ const AboutSection = () => {
             to="/aboutus"
             className="lg:text-lg font-semibold px-7 py-2 border-4 border-yellow-500"
           >
-            ABOUT US
+            About Us
           </Link>
         </div>
       </div>

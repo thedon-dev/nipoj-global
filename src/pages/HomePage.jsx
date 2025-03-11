@@ -71,7 +71,10 @@ const HomePage = () => {
               cost-effective structures that meet global standards.
             </p>
             <div className="mt-14">
-              <Link className="uppercase font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black">
+              <Link
+                to="/projects"
+                className="uppercase font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black"
+              >
                 view our work
               </Link>
             </div>

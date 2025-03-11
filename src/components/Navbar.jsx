@@ -92,7 +92,7 @@ const Navbar = () => {
                 to={lnk.link}
                 className={({ isActive }) =>
                   `text-black text-center px-5 lg:px-3 py-5 lg:py-1 ${
-                    isActive ? "border-b-4 border-yellow-500" : ""
+                    isActive ? "lg:border-b-4 border-yellow-500" : ""
                   } transition-all duration-300`
                 }
               >

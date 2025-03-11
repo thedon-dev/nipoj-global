@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { LuConstruction } from "react-icons/lu";
 import { Link } from "react-router-dom";
 import YellowMarker from "../components/YellowMarker";
@@ -12,6 +12,9 @@ import FreeQuote from "../components/FreeQuote";
 import FAQ from "../components/QuestionAndAnswer";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main>
       <section className="flex flex-col lg:flex-row 2xl:container mx-auto">
@@ -77,14 +80,17 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <Link className="text-sm lg:text-lg font-semibold border-4 border-yellow-500 px-4 py-2 lg:px-7 lg:py-3">
               Online Estimate Form
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="px-[5%] lg:px-[10%] py-14 lg:py-32 bg-[#f7f7f7]">
+      <div
+        id="sendMessage"
+        className="px-[5%] lg:px-[10%] py-14 lg:py-32 bg-[#f7f7f7]"
+      >
         <div className="2xl:container mx-auto flex flex-col-reverse lg:grid grid-cols-2 lg:gap-20">
           <div className="">
             <h2 className="text-4xl font-semibold mt-20 lg:mt-0">

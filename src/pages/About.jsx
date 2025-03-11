@@ -148,7 +148,7 @@ const About = () => {
         <div className="2xl:container mx-auto flex flex-col lg:flex-row">
           <div className="lg:w-2/5 px-5 lg:px-10 py-20 bg-[#f7f7f7]">
             <h3 className="text-3xl lg:text-5xl font-bold text-[#2a2a2a]">
-              Only the best
+              Why Choose NIPOJ?
             </h3>
             <div className="mt-10">
               {howWeWork.map((work, index) => (
@@ -160,11 +160,15 @@ const About = () => {
                     <h3 className="text-xl font-semibold text-[#2a2a2a]">
                       {work.heading}
                     </h3>
-                    {/* <p>{work.description}</p> */}
                     <p className="lg:w-4/5">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Ullam necessitatibus labore libero tenetur. Tempora,
-                      maxime?
+                      {index === 0 &&
+                        "We are committed to delivering projects with precision, efficiency, and high-quality standards. Our experienced team ensures every project meets industry best practices."}
+                      {index === 1 &&
+                        "With over two decades of experience, we bring a wealth of expertise in engineering, construction, energy, and marine services, ensuring seamless execution from start to finish."}
+                      {index === 2 &&
+                        "We believe in building lasting relationships with our clients by offering tailored solutions that align with their specific needs and business goals."}
+                      {index === 3 &&
+                        "Our projects prioritize safety, environmental sustainability, and compliance with national and international regulations, guaranteeing reliable and future-proof solutions."}
                     </p>
                   </div>
                 </div>
@@ -195,11 +199,10 @@ const About = () => {
       </section>
       <section className="2xl:container mx-auto px-[5%] lg:px-[10%] py-20 lg:py-32 text-center">
         <h1 className="text-2xl front-semibold text-[#2a2a2a] lg:w-4/5 mx-auto">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum maxime
-          dolorem commodi, consequuntur quia veniam cupiditate odit ex nesciunt
-          animi.
+          "The secret of change is to focus all of your energy not on fighting
+          the old, but on building the new."
         </h1>
-        <p className="font-bold mt-10 text-[#2a2a2a]">~ JOHN SMITH - CEO</p>
+        <p className="font-bold mt-10 text-[#2a2a2a]">~ Socrates</p>
       </section>
     </>
   );
