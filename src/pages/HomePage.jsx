@@ -1,17 +1,13 @@
-import React from "react";
-import { LuConstruction } from "react-icons/lu";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import YellowMarker from "../components/YellowMarker";
 import LatestProjects from "../sections/mainPage/LatestProjects";
 import { Helmet } from "react-helmet";
-import { FaBuilding, FaDotCircle, FaRoad, FaTasks } from "react-icons/fa";
 import AboutSection from "../sections/mainPage/AboutSection";
 import HeroImage from "../assets/HeroImage.jpg";
 import image2 from "../assets/image2.jpg";
 import FreeQuote from "../components/FreeQuote";
-import { BsDot } from "react-icons/bs";
-import { GoDot, GoDotFill } from "react-icons/go";
-import { PiDot } from "react-icons/pi";
+import { GoDotFill } from "react-icons/go";
 
 const HomePage = () => {
   const Services = [
@@ -20,6 +16,9 @@ const HomePage = () => {
     "Marine and Consultancy",
     "Mining operation",
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Helmet>

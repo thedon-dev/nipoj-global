@@ -1,10 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import HeroImage from "../assets/HeroImage.jpg";
+import img1 from "../assets/IMG-20250217-WA0303.jpg";
+import img2 from "../assets/IMG-20250217-WA0304.jpg";
+import img3 from "../assets/IMG-20250217-WA0305.jpg";
+import img4 from "../assets/IMG-20250217-WA0306.jpg";
+import img5 from "../assets/IMG-20250217-WA0307.jpg";
+import img6 from "../assets/IMG-20250217-WA0308.jpg";
+import img7 from "../assets/IMG-20250217-WA0309.jpg";
+import img8 from "../assets/IMG-20250217-WA0310.jpg";
+import img9 from "../assets/IMG-20250217-WA0311.jpg";
+import video from "../assets/VID-20250217-WA0078.mp4";
 
 const Projects = () => {
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (!videoElement) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(videoElement);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <section className="flex flex-col lg:flex-row 2xl:container mx-auto">
@@ -29,8 +63,47 @@ const Projects = () => {
           </p>
         </div>
       </section>
-      <section className="px-[5%] lg:px-[10%]">
-        <div className="2xl:container mx-auto"></div>
+      <section className="px-[5%] lg:px-[10%] py-32">
+        <h1 className="text-5xl font-semibold text-[#2a2a2a] text-center">
+          Our Projects
+        </h1>
+        <div className="2xl:container mx-auto grid grid-cols-2 lg:grid-cols-3 gap-2 mt-14">
+          {images.map((img, idx) => (
+            // <div>
+            //   {idx !== 5 && idx !== 6 ? (
+            //     <img
+            //       src={img}
+            //       alt=""
+            //       className="object-cover col-span-1 row-span-1"
+            //     />
+            //   ) : (
+            //     <video
+            //       ref={videoRef}
+            //       src={video}
+            //       className="w-full h-full object-cover col-span-2 row-span-1"
+            //       autoPlay
+            //       controls
+            //       loop
+            //       muted
+            //       playsInline
+            //     ></video>
+            //   )}
+            // </div>
+            <img src={img} alt="" className="object-cover" />
+          ))}
+        </div>
+        <div className="2xl:container mx-auto">
+          <video
+            ref={videoRef}
+            src={video}
+            className="w-full h-full border mt-5"
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+          ></video>
+        </div>
       </section>
       <section className="2xl:container mx-auto bg-yellow-500 px-[5%] lg:px-[10%] py-20">
         <h1 className="text-2xl lg:text-4xl text-center font-semibold text-[#2a2a2a]">
