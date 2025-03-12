@@ -6,6 +6,7 @@ import { GoTools } from "react-icons/go";
 import { MdDesignServices } from "react-icons/md";
 import YellowMarker from "../components/YellowMarker";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   useEffect(() => {
@@ -50,6 +51,31 @@ const About = () => {
   ];
   return (
     <>
+      <Helmet>
+        <title>About Us | NIPOJ Global Services Ltd.</title>
+        <meta
+          name="description"
+          content="NIPOJ Global Services Ltd. is a leader in Engineering, Construction, Renewable Energy, and Marine Services. With a commitment to innovation, sustainability, and quality, we deliver cutting-edge solutions that drive development across industries. Partner with us for reliable and efficient infrastructure solutions."
+        />
+        <meta
+          name="keywords"
+          content="Engineering, Construction, Renewable Energy, Marine Services, Infrastructure, Sustainable Solutions"
+        />
+        <meta name="author" content="NIPOJ Global Services Ltd." />
+        <meta
+          property="og:title"
+          content="NIPOJ Global Services Ltd. | Engineering & Construction Experts"
+        />
+        <meta
+          property="og:description"
+          content="Providing innovative solutions in engineering, construction, and renewable energy to drive sustainable development."
+        />
+        <meta
+          property="og:image"
+          content="https://nipojglobalservicesltd.org/images/company-banner.jpg"
+        />
+        <meta property="og:url" content="https://nipojglobalservicesltd.org" />
+      </Helmet>
       <section
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${heroImage})`,

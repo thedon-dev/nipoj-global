@@ -10,6 +10,7 @@ import img7 from "../assets/IMG-20250217-WA0309.jpg";
 import img8 from "../assets/IMG-20250217-WA0310.jpg";
 import img9 from "../assets/IMG-20250217-WA0311.jpg";
 import video from "../assets/VID-20250217-WA0078.mp4";
+import { Helmet } from "react-helmet";
 
 const Projects = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
@@ -41,6 +42,31 @@ const Projects = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Projects | NIPOJ Global Services Ltd.</title>
+        <meta
+          name="description"
+          content="NIPOJ Global Services Ltd. is a leader in Engineering, Construction, Renewable Energy, and Marine Services. With a commitment to innovation, sustainability, and quality, we deliver cutting-edge solutions that drive development across industries. Partner with us for reliable and efficient infrastructure solutions."
+        />
+        <meta
+          name="keywords"
+          content="Engineering, Construction, Renewable Energy, Marine Services, Infrastructure, Sustainable Solutions"
+        />
+        <meta name="author" content="NIPOJ Global Services Ltd." />
+        <meta
+          property="og:title"
+          content="NIPOJ Global Services Ltd. | Engineering & Construction Experts"
+        />
+        <meta
+          property="og:description"
+          content="Providing innovative solutions in engineering, construction, and renewable energy to drive sustainable development."
+        />
+        <meta
+          property="og:image"
+          content="https://nipojglobalservicesltd.org/images/company-banner.jpg"
+        />
+        <meta property="og:url" content="https://nipojglobalservicesltd.org" />
+      </Helmet>
       <section className="flex flex-col lg:flex-row 2xl:container mx-auto">
         <div
           className="py-20 px-[5%] lg:p-32 bg-black text-white"
