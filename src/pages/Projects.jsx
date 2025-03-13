@@ -72,9 +72,9 @@ const Projects = () => {
     img29,
     img30,
   ];
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const videoRef = useRef(null);
 
