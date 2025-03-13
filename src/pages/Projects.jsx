@@ -12,9 +12,30 @@ import img9 from "../assets/IMG-20250217-WA0311.jpg";
 import img10 from "../assets/IMG-20250221-WA0170.jpg";
 import img11 from "../assets/IMG-20250221-WA0175.jpg";
 import img12 from "../assets/IMG-20250221-WA0162.jpg";
+import img13 from "../assets/IMG-20250221-WA0172.jpg";
+import img14 from "../assets/IMG-20250221-WA0178.jpg";
+import img15 from "../assets/IMG-20250221-WA0179.jpg";
+import img16 from "../assets/IMG-20250221-WA0177.jpg";
+import img17 from "../assets/IMG-20250221-WA0181.jpg";
+import img18 from "../assets/IMG-20250221-WA0168.jpg";
+import img19 from "../assets/IMG-20250221-WA0174.jpg";
+import img20 from "../assets/IMG-20250221-WA0175.jpg";
+import img21 from "../assets/IMG-20250221-WA0169.jpg";
+import img22 from "../assets/IMG-20250221-WA0164.jpg";
+import img23 from "../assets/IMG-20250221-WA0161.jpg";
+import img24 from "../assets/IMG-20250221-WA0160.jpg";
+import img25 from "../assets/IMG-20250227-WA0642.jpg";
+import img26 from "../assets/IMG-20250227-WA0644.jpg";
+import img27 from "../assets/IMG-20250227-WA0645.jpg";
+import img28 from "../assets/IMG-20250227-WA0648.jpg";
+import img29 from "../assets/IMG-20250227-WA0651.jpg";
+import img30 from "../assets/IMG-20250227-WA0650.jpg";
 
 import video from "../assets/VID-20250217-WA0078.mp4";
-import video2 from "../assets/New_Video.mp4";
+import video2 from "../assets/VID-20250217-WA0077.mp4";
+import video3 from "../assets/VID-20250227-WA0105.mp4";
+import video4 from "../assets/New_Video.mp4";
+import video5 from "../assets/New_Video.mp4";
 
 import { Helmet } from "react-helmet";
 
@@ -32,6 +53,24 @@ const Projects = () => {
     img10,
     img11,
     img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    img18,
+    img19,
+    img20,
+    img21,
+    img22,
+    img23,
+    img24,
+    img25,
+    img26,
+    img27,
+    img28,
+    img29,
+    img30,
   ];
   // useEffect(() => {
   //   window.scrollTo(0, 0);
@@ -112,29 +151,19 @@ const Projects = () => {
         <h1 className="text-5xl font-semibold text-[#2a2a2a] text-center">
           Our Projects
         </h1>
-        <div className="2xl:container mx-auto grid grid-cols-2 lg:grid-cols-3 gap-2 mt-14">
+        <div className="2xl:container mx-auto grid lg:grid-cols-3 gap-2 mt-14">
           {images.map((img, idx) => (
-            // <div>
-            //   {idx !== 5 && idx !== 6 ? (
-            //     <img
-            //       src={img}
-            //       alt=""
-            //       className="object-cover col-span-1 row-span-1"
-            //     />
-            //   ) : (
-            //     <video
-            //       ref={videoRef}
-            //       src={video}
-            //       className="w-full h-full object-cover col-span-2 row-span-1"
-            //       autoPlay
-            //       controls
-            //       loop
-            //       muted
-            //       playsInline
-            //     ></video>
-            //   )}
-            // </div>
-            <img src={img} alt="" className="object-cover" />
+            <div
+              key={idx}
+              className="h-[20rem]"
+              style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              {/* <img key={idx} src={img} alt="" className="object-cover" /> */}
+            </div>
           ))}
         </div>
         <div className="2xl:container mx-auto">
@@ -151,7 +180,37 @@ const Projects = () => {
           <video
             ref={videoRef}
             src={video2}
-            className="w-[20rem] h-full mx-auto mt-5"
+            className="w-full h-full mx-auto mt-5"
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+          ></video>
+          <video
+            ref={videoRef}
+            src={video3}
+            className="w-[30rem] h-full mx-auto mt-5"
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+          ></video>
+          <video
+            ref={videoRef}
+            src={video4}
+            className="w-full h-full mx-auto mt-5"
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+          ></video>
+          <video
+            ref={videoRef}
+            src={video5}
+            className="w-[30rem] h-full mx-auto mt-5"
             autoPlay
             controls
             loop
