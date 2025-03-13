@@ -9,14 +9,33 @@ import img6 from "../assets/IMG-20250217-WA0308.jpg";
 import img7 from "../assets/IMG-20250217-WA0309.jpg";
 import img8 from "../assets/IMG-20250217-WA0310.jpg";
 import img9 from "../assets/IMG-20250217-WA0311.jpg";
+import img10 from "../assets/IMG-20250221-WA0170.jpg";
+import img11 from "../assets/IMG-20250221-WA0175.jpg";
+import img12 from "../assets/IMG-20250221-WA0162.jpg";
+
 import video from "../assets/VID-20250217-WA0078.mp4";
+import video2 from "../assets/New_Video.mp4";
+
 import { Helmet } from "react-helmet";
 
 const Projects = () => {
-  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
+  const images = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+  ];
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // });
 
   const videoRef = useRef(null);
 
@@ -122,7 +141,17 @@ const Projects = () => {
           <video
             ref={videoRef}
             src={video}
-            className="w-full h-full border mt-5"
+            className="w-full h-full mt-5"
+            autoPlay
+            controls
+            loop
+            muted
+            playsInline
+          ></video>
+          <video
+            ref={videoRef}
+            src={video2}
+            className="w-[20rem] h-full mx-auto mt-5"
             autoPlay
             controls
             loop
