@@ -199,16 +199,6 @@ const Projects = () => {
           ></video>
           <video
             ref={videoRef}
-            src={video4}
-            className="w-full h-full mx-auto mt-5"
-            autoPlay
-            controls
-            loop
-            muted
-            playsInline
-          ></video>
-          <video
-            ref={videoRef}
             src={video5}
             className="w-[30rem] h-full mx-auto mt-5"
             autoPlay

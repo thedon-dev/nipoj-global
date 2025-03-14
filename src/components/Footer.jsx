@@ -76,6 +76,13 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex gap-3 items-center">
+              <FaLocationPin className="text-gray-600" />
+              <span>
+                Branch: No. 30 Omerelu Street GRA, Phase II, Port Harcourt,
+                Rivers State.
+              </span>
+            </div>
+            <div className="flex gap-3 items-center">
               <BsTelephoneFill className="text-gray-600" />
               <span>+234 (0) 8035306165</span>
             </div>
