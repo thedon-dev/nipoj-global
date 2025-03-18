@@ -113,9 +113,13 @@ const About = () => {
               unique needs of our clients.
             </p>
             <div className="mt-14">
-              <Link className="font-bold lg:text-md px-7 py-3 bg-yellow-500 text-black">
-                Get A Free Quote
-              </Link>
+              <a
+                href="/NIPOJ GLOBAL PROFILE.pdf"
+                download="NIPOJ_GLOBAL_profile.pdf"
+                className="text-sm lg:text-base px-4 lg:px-7 py-2 border-4 border-yellow-500"
+              >
+                Company Brochure (PDF)
+              </a>
             </div>
           </div>
           <div className="lg:w-1/3 mt-10 lg:mt-0">
@@ -132,7 +136,6 @@ const About = () => {
                     </h5>
                     <p className="lg:hidden text-sm text-gray-300">
                       {service.description}{" "}
-                      {/* Replace with actual descriptions */}
                     </p>
                   </div>
                 </div>

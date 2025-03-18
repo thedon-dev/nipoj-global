@@ -65,9 +65,13 @@ const AboutSection = () => {
             <p className="text-sm lg:text-lg">+234 (0) 8035306165</p>
           </div>
           <div className="grid place-content-center w-1/2 p-5">
-            <Link className="text-sm lg:text-base px-4 lg:px-7 py-2 border-4 border-[#2a2a2a]">
-              Estimate Form
-            </Link>
+            <a
+              href="/NIPOJ GLOBAL PROFILE.pdf"
+              download="NIPOJ_GLOBAL_profile.pdf"
+              className="text-sm lg:text-base px-4 lg:px-7 py-2 border-4 border-[#2a2a2a]"
+            >
+              Company Brochure (PDF)
+            </a>
           </div>
         </div>
       </div>

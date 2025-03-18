@@ -9,9 +9,13 @@ const FreeQuote = () => {
           Get A Quote For Your Project
         </h2>
         <div className="">
-          <Link className="text-sm lg:text-lg font-semibold border-4 border-yellow-500 px-4 py-2 lg:px-7 lg:py-3">
-            Free Quote
-          </Link>
+          <a
+            href="/NIPOJ GLOBAL PROFILE.pdf"
+            download="NIPOJ_GLOBAL_profile.pdf"
+            className="text-sm lg:text-base px-4 lg:px-7 py-2 border-4 border-[#2a2a2a]"
+          >
+            Company Brochure (PDF)
+          </a>
         </div>
       </div>
     </div>
