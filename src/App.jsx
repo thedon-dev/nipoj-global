@@ -7,6 +7,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function MainLayout() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
 
       {location.pathname !== "/contact" && <Footer />}

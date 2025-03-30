@@ -53,7 +53,7 @@ const LatestProjects = () => {
             //     </Link>
             //   </div>
             // </div>
-            <div className="">
+            <div key={index} className="">
               <img src={project} alt="" className="object-cover" />
             </div>
           ))}
