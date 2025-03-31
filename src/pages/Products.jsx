@@ -8,17 +8,18 @@ import Solar6 from "../assets/Solar6.jpg";
 
 const Products = () => {
   const [btnIdx, setBtnIdx] = useState(0);
-  const buttons = ["Solar"];
+  const buttons = ["Solar Panels"];
 
   const images = [[Solar1, Solar2, Solar3, Solar4, Solar5, Solar6]];
   return (
-    <main className="px-[5%] lg:px-[10%] py-32">
+    <main className="px-[5%] lg:px-[10%] py-20">
       <div className="2xl:container mx-auto">
         <h1 className="text-6xl font-bold text-center">Products</h1>
 
         <div className="mt-10">
           {buttons.map((btn, index) => (
             <button
+              onClick={() => setBtnIdx(index)}
               key={index}
               className={`${
                 btnIdx == index ? "border-b-4 border-yellow-500" : "'"
