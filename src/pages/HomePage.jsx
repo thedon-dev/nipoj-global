@@ -125,8 +125,8 @@ const HomePage = () => {
             ></div>
             <div className="lg:w-3/5 mt-10 lg:mt-0">
               <div className="px-[5%] lg:px-24 lg:py-36">
-                <h2 className="font-bold text-4xl">No Project Too Big</h2>
-                <YellowMarker />
+                {/* <h2 className="font-bold text-4xl">No Project Too Big</h2> */}
+                {/* <YellowMarker /> */}
                 <div className="text-[#2a2a2a]  grid lg:grid-cols-2 text-sm gap-5 lg:gap-10 mt-10">
                   <p>
                     Since 2003, NIPOJ Global Services Limited has been

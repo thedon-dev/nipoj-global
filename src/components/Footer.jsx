@@ -87,6 +87,10 @@ const Footer = () => {
               <span>+234 (0) 8035306165</span>
             </div>
             <div className="flex gap-3 items-center">
+              <BsTelephoneFill className="text-gray-600" />
+              <span>+234 (0) 8033223754</span>
+            </div>
+            <div className="flex gap-3 items-center">
               <MdMessage className="text-gray-600" />
               <span>info@nipojglobalservicesltd.org</span>
             </div>

@@ -96,6 +96,7 @@ const Contact = () => {
                   nipoj-global.vercel.app
                 </Link>
                 <p>+234 (0) 8035306165</p>
+                <p>+234 (0) 8033223754</p>
               </div>
             </div>
           </div>
